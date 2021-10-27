@@ -25,7 +25,6 @@ public class ToAddTaskServlet extends HttpServlet {
         Body by=new Body();
         try {
             TaxPayer payer = by.selectByTaxpayerPayerCode(payerCode);
-
             req.setAttribute("payer",payer);
             TaxOrgan organ = en.selectByOrganId(payer.getTaxOrganId());
             Industry industry = en.selectByIndustryId(payer.getIndustryId());

@@ -4,7 +4,6 @@ import com.zhidisoft.LoginMysql.Body;
 import com.zhidisoft.entity.User;
 import com.zhidisoft.util.EncryptUtil;
 import net.sf.json.JSONObject;
-
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -21,7 +20,6 @@ public class UpdatePassword extends HttpServlet {
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
        doPost(req,resp);
     }
-
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         Body by=new Body();
